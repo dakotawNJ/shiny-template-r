@@ -1,0 +1,38 @@
+---
+title: "Libraries"
+---
+
+Any 3rd party libraries not included in the lists below should be approved before adding them to a Shiny application.
+This is to ensure that it is distributed via the proper channels (e.g. CRAN) and is well maintained by the developer.
+
+Try to minimize the libraries used in each app to the minimum needed to perform its intended purpose.
+This is to minimize the overhead of maintaining multiple package versions to avoid conflicts.
+Additionally, it reduces the amount of packages a user has to install or update if the app is shared locally. 
+
+See below for commonly used libraries:
+
+#### Front-End
+[shiny](https://shiny.posit.co/r/)\
+[DT](https://rstudio.github.io/DT/)\
+[bslib](https://rstudio.github.io/bslib/)\
+[ggplot2](https://ggplot2.tidyverse.org/)\
+[plotly](https://plotly.com/r/)\
+[leaflet](https://rstudio.github.io/leaflet/)\
+[shinycssloaders](https://github.com/daattali/shinycssloaders)\
+[shinyalert](https://github.com/daattali/shinyalert)\
+
+#### Back-End
+[Base R](https://rdrr.io/r/)\
+[dplyr](https://dplyr.tidyverse.org/)\
+[dbplyr](https://dbplyr.tidyverse.org/)\
+[DBI](https://dbi.r-dbi.org/)\
+[odbc](https://github.com/r-dbi/odbc)\
+[data.table](https://rdatatable.gitlab.io/data.table/)\
+[lubridate](https://lubridate.tidyverse.org/)\
+[stringr](https://stringr.tidyverse.org/)\
+[purrr](https://purrr.tidyverse.org/)\
+[readxl](https://readxl.tidyverse.org/)\
+[writexl](https://docs.ropensci.org/writexl/)\
+[vroom](https://vroom.tidyverse.org/)\
+[dataRetrieval](https://doi-usgs.github.io/dataRetrieval/)\
+[sf](https://r-spatial.github.io/sf/)\

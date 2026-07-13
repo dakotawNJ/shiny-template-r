@@ -1,0 +1,16 @@
+---
+title: "Naming Conventions"
+---
+
+Certain conventions should be followed when implementing this structure so that the app can be easily collaborated on by other developers.
+
+#### R code
+For general code formatting, follow the [Tidyverse Style Guide](https://style.tidyverse.org/).
+
+#### Shiny code
+For Shiny specifically, see below:
+
+Top-level UI modules: The name of the page with the *ui* suffix in camelCase (`myUI`)\
+Top-level server modules: The name of the page with the *module* suffix in camelCase (`myModule`)\
+Global state object: Named `state` in both the module function call and body\
+Optional module state: Named `module`\

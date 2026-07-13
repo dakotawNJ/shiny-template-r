@@ -1,0 +1,34 @@
+---
+title: "Folder Structure"
+---
+
+#### app.R
+The folder structure starts by creating an `app.R` file in the root directory.
+This is the entry point to the app that imports the core UI and server components.
+You then create an `R/` (R) subdirectory where each page file will be created.
+
+#### R/
+UI and server code should go in the `R/` subdirectory.
+Shiny will automatically `source` all `.R` files in the this subdirectory, so you do not need to import them in the `app.R` file.
+
+#### _global.R
+Global variables shared across the entire application should go in a `_global.R` file.
+However, if data is loaded here or outside of a module or function's scope, it might slow down your application at startup.
+It's better practice to load data within module or function scope.
+
+#### data/
+Data files should go in a `data/` subdirectory.
+
+#### www/
+Any custom HTML/CSS/JavaScript files should go in the `www/` subdirectory.
+
+#### Tree view
+```
+project-directory/
+    app.R
+    R/
+    data/
+    www/
+```
+
+More here: [Shiny App Formats](https://shiny.posit.co/r/articles/build/app-formats/)
